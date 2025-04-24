@@ -73,10 +73,6 @@ spec:
       input:
         repoContentsUrl: ${{ steps.publish.output.repoContentsUrl }}
         catalogInfoPath: "/catalog-info.yaml"
-        catalogInfo:
-          metadata:
-            annotations:
-              backstage.io/scaffolded-from: default:template/create-react-app-template
 
   output:
     links:
