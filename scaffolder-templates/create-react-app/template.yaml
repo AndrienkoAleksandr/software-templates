@@ -58,6 +58,11 @@ spec:
           destination: ${{ parameters.repoUrl | parseRepoUrl }}
           owner: ${{ parameters.owner }}
 
+    # this step is an example of using the `catalog:scaffolded-from` action
+    - id: append-templateRef
+      name: Append the entityRef of this template to the entityRef
+      action: catalog:scaffolded-from
+
     - id: publish
       name: Publish
       action: publish:github
