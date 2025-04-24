@@ -8,6 +8,7 @@ metadata:
     - react
     - cra
 spec:
+  scaffoldedFrom: create-react-app-template
   owner: web@example.com
   type: website
   parameters:
